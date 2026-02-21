@@ -69,7 +69,7 @@
     {
       "id": "htb-icon",
       "description": " htb",
-      "imageUrl": "https://img.icons8.com/color/48/hack-the-box.png",
+      "imageUrl": "https://huggingface.co/Dat4W3rites/Cyber-Writeups-Data/resolve/main/8faa3e32-591b-5a15-cf2c-5a605f89f7ad-removebg-preview.png",
       "imageHint": "stealth operative"
     },
     {
@@ -81,7 +81,7 @@
     {
       "id": "web-icon",
       "description": " thm",
-      "imageUrl": "https://img.icons8.com/color/1200/domain--v1.jpg",
+      "imageUrl": "https://huggingface.co/Dat4W3rites/Cyber-Writeups-Data/resolve/main/domain--v1-removebg-preview.png",
       "imageHint": "stealth operative"
     }
   ]

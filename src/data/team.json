@@ -1,12 +1,12 @@
 
 [
-  { "name": "M33NAN", "role": "B - RANK", "imageId": "pwn1", "links": { "web": "http://m33n4n.vercel.app/", "thm": "https://tryhackme.com/p/M33NAN", "htb": "https://app.hackthebox.com/profile/1" } },
-  { "name": "KavanSoni", "role": "A -Rank", "imageId": "web1", "links": { "web": "#", "thm": "https://tryhackme.com/p/KavanSoni", "htb": "https://app.hackthebox.com/profile/2" } },
-  { "name": "HCK_CAT", "role": "C - RANK", "imageId": "rev1", "links": { "web": "#", "thm": "https://tryhackme.com/p/GrimgarH", "htb": "https://app.hackthebox.com/profile/3" } },
-  { "name": "NICETRYKIDDO", "role": "B - RANK", "imageId": "foren1", "links": { "web": "https://nicetrykiddo.github.io/", "thm": "https://tryhackme.com/p/nicetrykiddo", "htb": "https://app.hackthebox.com/profile/4" } },
-  { "name": "N3THUNT3R69", "role": "A - RANK", "imageId": "crypto1", "links": { "web": "#", "thm": "https://tryhackme.com/p/n3thunt3r69", "htb": "https://app.hackthebox.com/profile/5" } },
-  { "name": "LILMKT", "role": "A - RANK", "imageId": "crypto2", "links": { "web": "#", "thm": "https://tryhackme.com/p/lilmkt", "htb": "https://app.hackthebox.com/profile/6" } },
-  { "name": "PANDAGFX", "role": "A - RANK", "imageId": "crypto3", "links": { "web": "#", "thm": "https://tryhackme.com/p/PandaGFX", "htb": "https://app.hackthebox.com/profile/7" } },
-  { "name": "[Andrew@localhost]$", "role": "C - RANK", "imageId": "crypto4", "links": { "web": "#", "thm": "https://tryhackme.com/p/Knockingd00r", "htb": "https://app.hackthebox.com/profile/8" } },
-  { "name": "SHYAM", "role": "D - RANK", "imageId": "crypto5", "links": { "web": "#", "thm": "https://tryhackme.com/p/meghashyamravuru", "htb": "https://app.hackthebox.com/profile/9" } }
+  { "name": "M33NAN", "role": "B - RANK", "imageId": "pwn1", "links": { "web": "http://m33n4n.vercel.app/", "thm": "https://tryhackme.com/p/M33NAN", "htb": "#" } },
+  { "name": "KavanSoni", "role": "A -Rank", "imageId": "web1", "links": { "web": "#", "thm": "https://tryhackme.com/p/KavanSoni", "htb": "https://app.hackthebox.com/public/users/2002278" } },
+  { "name": "HCK_CAT", "role": "C - RANK", "imageId": "rev1", "links": { "web": "#", "thm": "https://tryhackme.com/p/GrimgarH", "htb": "#" } },
+  { "name": "NICETRYKIDDO", "role": "B - RANK", "imageId": "foren1", "links": { "web": "https://nicetrykiddo.github.io/", "thm": "https://tryhackme.com/p/nicetrykiddo", "htb": "#" } },
+  { "name": "N3THUNT3R69", "role": "A - RANK", "imageId": "crypto1", "links": { "web": "#", "thm": "https://tryhackme.com/p/n3thunt3r69", "htb": "https://app.hackthebox.com/public/users/2196361" } },
+  { "name": "LILMKT", "role": "A - RANK", "imageId": "crypto2", "links": { "web": "#", "thm": "https://tryhackme.com/p/lilmkt", "htb": "#" } },
+  { "name": "PANDAGFX", "role": "A - RANK", "imageId": "crypto3", "links": { "web": "#", "thm": "https://tryhackme.com/p/PandaGFX", "htb": "#" } },
+  { "name": "[Andrew@localhost]$", "role": "C - RANK", "imageId": "crypto4", "links": { "web": "#", "thm": "https://tryhackme.com/p/Knockingd00r", "htb": "#" } },
+  { "name": "SHYAM", "role": "D - RANK", "imageId": "crypto5", "links": { "web": "#", "thm": "https://tryhackme.com/p/meghashyamravuru", "htb": "https://app.hackthebox.com/public/users/2357357" } }
 ]

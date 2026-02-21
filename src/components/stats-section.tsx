@@ -1,3 +1,4 @@
+
 "use client"
 
 import React, { useState, useEffect } from 'react';
@@ -8,6 +9,7 @@ import statsData from '@/data/stats.json';
 import {
   Dialog,
   DialogContent,
+  DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
 
@@ -93,9 +95,9 @@ const LeaderboardDialog = ({ eventTitle }: { eventTitle: string }) => {
           <div className="flex justify-between items-start mb-2">
             <div>
               <span className="text-[10px] font-black text-emerald-500 uppercase tracking-[0.4em] font-mono">Leaderboard</span>
-              <h2 className="text-2xl md:text-3xl font-black text-white tracking-tight uppercase font-mono mt-1">
+              <DialogTitle className="text-2xl md:text-3xl font-black text-white tracking-tight uppercase font-mono mt-1">
                 {eventTitle}
-              </h2>
+              </DialogTitle>
             </div>
             <div className="text-right">
               <span className="text-[10px] font-black text-white/30 uppercase tracking-widest font-mono">Status</span>

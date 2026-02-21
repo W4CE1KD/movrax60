@@ -71,7 +71,7 @@ const MemberCard = ({ name, role, index, image, links, htbIcon, thmIcon, webIcon
             {htbIcon && links.htb && (
               <Link href={links.htb} target="_blank" className="group/icon" title="Hack The Box Profile">
                 <div className="relative w-8 h-8">
-                  <Image src={htbIcon.imageUrl} alt="Hack The Box" fill className="object-contain invert group-hover/icon:opacity-75 transition-opacity" />
+                  <Image src={htbIcon.imageUrl} alt="Hack The Box" fill className="object-contain group-hover/icon:opacity-75 transition-opacity" />
                 </div>
               </Link>
             )}

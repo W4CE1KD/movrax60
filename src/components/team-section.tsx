@@ -67,25 +67,25 @@ const MemberCard = ({ name, role, index, image, links, htbIcon, thmIcon, webIcon
             <div className="h-[2px] bg-secondary mt-5 w-8 group-hover:w-32 transition-all duration-700" />
           </div>
 
-          <div className="w-full mt-6 flex items-center justify-center gap-4">
+          <div className="w-full mt-6 flex items-center justify-center gap-6">
             {htbIcon && links.htb && (
               <Link href={links.htb} target="_blank" className="group/icon" title="Hack The Box Profile">
-                <div className="relative w-10 h-10 p-2 rounded-full border border-white/10 bg-black/30 group-hover/icon:bg-white/5 transition-colors">
-                  <Image src={htbIcon.imageUrl} alt="Hack The Box" fill className="object-contain invert group-hover/icon:invert-0 transition-all" />
+                <div className="relative w-8 h-8">
+                  <Image src={htbIcon.imageUrl} alt="Hack The Box" fill className="object-contain invert group-hover/icon:opacity-75 transition-opacity" />
                 </div>
               </Link>
             )}
             {thmIcon && links.thm && (
               <Link href={links.thm} target="_blank" className="group/icon" title="TryHackMe Profile">
-                <div className="relative w-10 h-10 p-2.5 rounded-full border border-white/10 bg-black/30 group-hover/icon:bg-white/5 transition-colors">
-                  <Image src={thmIcon.imageUrl} alt="TryHackMe" fill className="object-contain" />
+                <div className="relative w-7 h-7">
+                  <Image src={thmIcon.imageUrl} alt="TryHackMe" fill className="object-contain group-hover/icon:opacity-75 transition-opacity" />
                 </div>
               </Link>
             )}
             {webIcon && links.web && (
               <Link href={links.web} target="_blank" className="group/icon" title="Personal Website">
-                <div className="relative w-10 h-10 p-2 rounded-full border border-white/10 bg-black/30 group-hover/icon:bg-white/5 transition-colors">
-                  <Image src={webIcon.imageUrl} alt="Website" fill className="object-contain" />
+                <div className="relative w-7 h-7">
+                  <Image src={webIcon.imageUrl} alt="Website" fill className="object-contain group-hover/icon:opacity-75 transition-opacity" />
                 </div>
               </Link>
             )}

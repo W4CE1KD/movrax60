@@ -68,21 +68,21 @@ const MemberCard = ({ name, role, index, image, links, htbIcon, thmIcon, webIcon
           </div>
 
           <div className="w-full mt-6 flex items-center justify-center gap-4">
-            {htbIcon && links.htb && links.htb !== '#' && (
+            {htbIcon && links.htb && (
               <Link href={links.htb} target="_blank" className="group/icon" title="Hack The Box Profile">
                 <div className="relative w-10 h-10 p-2 rounded-full border border-white/10 bg-black/30 group-hover/icon:bg-white/5 transition-colors">
                   <Image src={htbIcon.imageUrl} alt="Hack The Box" fill className="object-contain invert group-hover/icon:invert-0 transition-all" />
                 </div>
               </Link>
             )}
-            {thmIcon && links.thm && links.thm !== '#' && (
+            {thmIcon && links.thm && (
               <Link href={links.thm} target="_blank" className="group/icon" title="TryHackMe Profile">
                 <div className="relative w-10 h-10 p-2.5 rounded-full border border-white/10 bg-black/30 group-hover/icon:bg-white/5 transition-colors">
                   <Image src={thmIcon.imageUrl} alt="TryHackMe" fill className="object-contain" />
                 </div>
               </Link>
             )}
-            {webIcon && links.web && links.web !== '#' && (
+            {webIcon && links.web && (
               <Link href={links.web} target="_blank" className="group/icon" title="Personal Website">
                 <div className="relative w-10 h-10 p-2 rounded-full border border-white/10 bg-black/30 group-hover/icon:bg-white/5 transition-colors">
                   <Image src={webIcon.imageUrl} alt="Website" fill className="object-contain" />

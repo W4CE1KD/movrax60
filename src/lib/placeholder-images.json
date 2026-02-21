@@ -1,3 +1,88 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "team-logo",
+      "description": "MOVRAX60 Team Logo",
+      "imageUrl": "https://huggingface.co/Dat4W3rites/Cyber-Writeups-Data/resolve/main/morvax/logo.png",
+      "imageHint": "abstract tech logo"
+    },
+    {
+      "id": "pwn1",
+      "description": "Team Leader Profile Image",
+      "imageUrl": "https://huggingface.co/Dat4W3rites/Cyber-Writeups-Data/resolve/main/morvax/e2d4c6c4-cfa9-4bc5-81e6-d3fd5285c877.png",
+      "imageHint": "hacker portrait"
+    },
+    {
+      "id": "rev1",
+      "description": "Reverse Engineering Specialist Profile Image",
+      "imageUrl": "https://tryhackme-images.s3.amazonaws.com/user-avatars/5f984b12fdffe72c342686e8-1761661304151",
+      "imageHint": "tech expert"
+    },
+    {
+      "id": "web1",
+      "description": "Web Security Specialist Profile Image",
+      "imageUrl": "https://huggingface.co/Dat4W3rites/Cyber-Writeups-Data/resolve/main/morvax/aizen-og-fans-where-u-i-use-the-2-keys-to-him-hair-v0-a63nfvjco7j81.png",
+      "imageHint": "cyber developer"
+    },
+    {
+      "id": "foren1",
+      "description": "Forensics Specialist Profile Image",
+      "imageUrl": "https://tryhackme-images.s3.amazonaws.com/user-avatars/67ca867ff589b2fde3629a6d-1764852329508",
+      "imageHint": "digital investigator"
+    },
+    {
+      "id": "crypto1",
+      "description": "Cryptography Specialist Profile Image",
+      "imageUrl": "https://huggingface.co/Dat4W3rites/Cyber-Writeups-Data/resolve/main/morvax/5104hEUM4lL._AC_SL1500_.jpg",
+      "imageHint": "cipher analyst"
+    },
+    {
+      "id": "red1",
+      "description": "Red Teaming Specialist Profile Image",
+      "imageUrl": "https://images.unsplash.com/photo-1590480981265-afebdf55cce5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdGVhbHRoJTIwb3BlcmF0aXZlfGVufDB8fHx8MTc3MTYwMTUwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stealth operative"
+    },
+    {
+      "id": "crypto2",
+      "description": " Profile Image",
+      "imageUrl": "https://tryhackme-images.s3.amazonaws.com/user-avatars/66e2e828322f21f257e2dc81-1760382394493",
+      "imageHint": "stealth operative"
+    },
+    {
+      "id": "crypto3",
+      "description": " Profile Image",
+      "imageUrl": "https://huggingface.co/Dat4W3rites/Cyber-Writeups-Data/resolve/main/morvax/cQky3vgcKgB2hQgKLThUsn-970-80.jpg.webp",
+      "imageHint": "stealth operative"
+    },
+    {
+      "id": "crypto4",
+      "description": " Profile Image",
+      "imageUrl": "https://huggingface.co/Dat4W3rites/Cyber-Writeups-Data/resolve/main/morvax/and.jpg",
+      "imageHint": "stealth operative"
+    },
+    {
+      "id": "crypto5",
+      "description": " Profile Image",
+      "imageUrl": "https://i.pinimg.com/736x/61/93/90/619390044a3e6a943ac20f49ce34b681.jpg",
+      "imageHint": "stealth operative"
+    },
+    {
+      "id": "htb-icon",
+      "description": " htb",
+      "imageUrl": "https://images.nuernbergmesse.de/files/8faa3e32-591b-5a15-cf2c-5a605f89f7ad.jpg",
+      "imageHint": "stealth operative"
+    },
+    {
+      "id": "thm-icon",
+      "description": " thm",
+      "imageUrl": "https://tryhackme.com/img/favicon.png",
+      "imageHint": "stealth operative"
+    },
+    {
+      "id": "web-icon",
+      "description": " thm",
+      "imageUrl": "https://img.icons8.com/color/1200/domain--v1.jpg",
+      "imageHint": "stealth operative"
+    }
+  ]
 }

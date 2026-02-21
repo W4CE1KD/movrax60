@@ -7,20 +7,34 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export const LoadingScreen = () => {
   const [loading, setLoading] = useState(true);
-  const [showText, setShowText] = useState(false);
   const logo = PlaceHolderImages.find(img => img.id === 'team-logo');
-  const loadingText = "INITIALIZING SYSTEM INTERFACE...";
+  
+  const loadingStates = [
+    "Connecting to Grid...",
+    "Authenticating Agent...",
+    "Decrypting Protocols...",
+    "Interface Initialized",
+  ];
+  const [currentState, setCurrentState] = useState(loadingStates[0]);
 
   useEffect(() => {
-    // Show text after a short delay
-    const textTimer = setTimeout(() => setShowText(true), 500);
+    let stateIndex = 0;
+    const stateInterval = setInterval(() => {
+      stateIndex++;
+      if (stateIndex < loadingStates.length) {
+        setCurrentState(loadingStates[stateIndex]);
+      } else {
+        clearInterval(stateInterval);
+      }
+    }, 850);
 
-    // Finish loading after a set duration
-    const loadingTimer = setTimeout(() => setLoading(false), 3500);
+    const loadingTimer = setTimeout(() => {
+      setLoading(false);
+    }, 3500);
 
     return () => {
-      clearTimeout(textTimer);
       clearTimeout(loadingTimer);
+      clearInterval(stateInterval);
     };
   }, []);
 
@@ -33,32 +47,24 @@ export const LoadingScreen = () => {
   };
 
   const logoVariants = {
-    initial: { opacity: 0, scale: 0.95 },
+    initial: { opacity: 0, scale: 0.9, y: 20 },
     animate: { 
-      opacity: [0, 1, 0.9, 1],
+      opacity: 1,
       scale: 1,
+      y: 0,
       transition: { 
         duration: 1.5,
-        ease: 'easeOut',
+        ease: [0.16, 1, 0.3, 1],
       }
     },
   };
   
-  const textContainerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.05,
-        delayChildren: 0.2,
-      },
-    },
+  const textVariants = {
+    initial: { opacity: 0, y: 15 },
+    animate: { opacity: 1, y: 0, transition: { duration: 0.4, ease: 'easeOut' }},
+    exit: { opacity: 0, y: -15, transition: { duration: 0.4, ease: 'easeIn' }},
   };
 
-  const textCharVariants = {
-    hidden: { opacity: 0, y: 10 },
-    visible: { opacity: 1, y: 0 },
-  };
 
   return (
     <AnimatePresence>
@@ -72,10 +78,10 @@ export const LoadingScreen = () => {
           {/* Background and Overlays */}
           <div className="absolute inset-0 pentagon-grid opacity-5 pointer-events-none" />
           <motion.div 
-            initial={{ y: '-100vh' }}
-            animate={{ y: '100vh' }}
-            transition={{ duration: 2, repeat: Infinity, ease: 'linear', repeatType: 'reverse', delay: 0.5 }}
-            className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-primary/20 to-transparent pointer-events-none"
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 0.3 }}
+            transition={{ duration: 2, ease: "circOut" }}
+            className="absolute w-[50vw] h-[50vw] max-w-lg max-h-lg bg-primary/20 rounded-full blur-3xl"
           />
           <div className="absolute inset-0 shadow-[inset_0_0_200px_rgba(0,0,0,1)]" />
 
@@ -98,22 +104,20 @@ export const LoadingScreen = () => {
               </div>
             )}
 
-            {showText && (
-              <motion.div
-                className="mt-8 text-center"
-                variants={textContainerVariants}
-                initial="hidden"
-                animate="visible"
-              >
-                <h2 className="text-xs md:text-sm font-mono tracking-[0.3em] uppercase text-secondary">
-                  {loadingText.split('').map((char, index) => (
-                    <motion.span key={index} variants={textCharVariants}>
-                      {char}
-                    </motion.span>
-                  ))}
-                </h2>
-              </motion.div>
-            )}
+            <div className="mt-8 text-center h-8">
+              <AnimatePresence mode="wait">
+                <motion.h2
+                  key={currentState}
+                  variants={textVariants}
+                  initial="initial"
+                  animate="animate"
+                  exit="exit"
+                  className="text-xs md:text-sm font-mono tracking-[0.3em] uppercase text-secondary"
+                >
+                  {currentState}
+                </motion.h2>
+              </AnimatePresence>
+            </div>
           </motion.div>
 
         </motion.div>
